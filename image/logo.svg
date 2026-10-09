@@ -1,0 +1,199 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1100" width="100%" height="100%">
+  <defs>
+    <!-- Color Gradients -->
+    <linearGradient id="globeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4ea3e3" />
+      <stop offset="40%" stop-color="#2a5bb5" />
+      <stop offset="85%" stop-color="#141847" />
+    </linearGradient>
+
+    <linearGradient id="dxRed" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f0535e" />
+      <stop offset="100%" stop-color="#bd2b38" />
+    </linearGradient>
+
+    <linearGradient id="antlerRed" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f0535e" />
+      <stop offset="100%" stop-color="#141847" />
+    </linearGradient>
+
+    <!-- Drop Shadow for Monogram -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#0a0c24" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@700;900&amp;display=swap');
+    .text-dx { font-family: 'Rajdhani', 'Impact', sans-serif; font-weight: 900; font-size: 115px; fill: #f0535e; }
+    .text-esports { font-family: 'Rajdhani', 'Impact', sans-serif; font-weight: 900; font-size: 115px; fill: #141847; }
+  </style>
+
+  <!-- MAIN EMBLEM GROUP -->
+  <g id="EmblemGroup" transform="translate(500, 440)">
+    
+    <!-- Outer Peach / Soft Coral Frame -->
+    <circle cx="0" cy="0" r="410" fill="#fad8cb" />
+
+    <!-- Inner Globe Circle -->
+    <circle cx="0" cy="0" r="360" fill="url(#globeGrad)" stroke="#fad8cb" stroke-width="4" />
+
+    <!-- Globe Grid Lines -->
+    <g stroke="#ffffff" stroke-width="1.8" opacity="0.25" fill="none">
+      <ellipse cx="0" cy="0" rx="360" ry="120" />
+      <ellipse cx="0" cy="0" rx="360" ry="240" />
+      <path d="M 0,-360 C -180,-180 -180,180 0,360" />
+      <path d="M 0,-360 C 180,-180 180,180 0,360" />
+      <line x1="0" y1="-360" x2="0" y2="360" />
+      <line x1="-360" y1="0" x2="360" y2="0" />
+    </g>
+
+    <!-- Tech Circuit Nodes in Globe background -->
+    <g stroke="#71b5f0" stroke-width="2" opacity="0.45" fill="none" stroke-linecap="round">
+      <!-- Left side tech circuit -->
+      <path d="M -310,-60 L -250,-60 L -220,-20 L -180,-20" />
+      <circle cx="-310" cy="-60" r="4" fill="#71b5f0" />
+      <circle cx="-250" cy="-60" r="4" fill="#71b5f0" />
+      <circle cx="-180" cy="-20" r="4" fill="#71b5f0" />
+      
+      <path d="M -300,40 L -240,40 L -210,0 L -170,0" />
+      <circle cx="-300" cy="40" r="4" fill="#71b5f0" />
+
+      <!-- Right side tech circuit -->
+      <path d="M 310,-60 L 250,-60 L 220,-20 L 180,-20" />
+      <circle cx="310" cy="-60" r="4" fill="#71b5f0" />
+      <circle cx="250" cy="-60" r="4" fill="#71b5f0" />
+      <circle cx="180" cy="-20" r="4" fill="#71b5f0" />
+
+      <path d="M 300,40 L 240,40 L 210,0 L 170,0" />
+      <circle cx="300" cy="40" r="4" fill="#71b5f0" />
+    </g>
+
+    <!-- Flying Birds (Background Detail) -->
+    <g fill="#ffffff" opacity="0.35">
+      <path d="M -240,-120 Q -232,-128 -224,-120 Q -216,-128 -208,-120 Q -216,-124 -224,-116 Q -232,-124 -240,-120 Z" />
+      <path d="M 208,-120 Q 216,-128 224,-120 Q 232,-128 240,-120 Q 232,-124 224,-116 Q 216,-124 208,-120 Z" />
+    </g>
+
+    <!-- STAG ANTLERS CROWN -->
+    <g id="Antlers" filter="url(#shadow)">
+      <!-- Left Antler -->
+      <path d="M -70,-80 
+               C -90,-150 -120,-220 -180,-270 
+               C -150,-240 -130,-200 -125,-170 
+               C -150,-200 -180,-220 -220,-240 
+               C -190,-210 -160,-180 -145,-150 
+               C -175,-165 -210,-175 -240,-170 
+               C -205,-150 -170,-140 -135,-130 
+               C -110,-100 -85,-85 -70,-80 Z" 
+            fill="#141847" stroke="#f0535e" stroke-width="4" stroke-linejoin="round" />
+      <path d="M -80,-90 C -100,-150 -130,-200 -170,-250 C -145,-220 -130,-190 -125,-160 C -145,-185 -170,-200 -200,-220 C -180,-195 -155,-170 -140,-145 Z" fill="url(#antlerRed)" opacity="0.8" />
+
+      <!-- Right Antler -->
+      <path d="M 70,-80 
+               C 90,-150 120,-220 180,-270 
+               C 150,-240 130,-200 125,-170 
+               C 150,-200 180,-220 220,-240 
+               C 190,-210 160,-180 145,-150 
+               C 175,-165 210,-175 240,-170 
+               C 205,-150 170,-140 135,-130 
+               C 110,-100 85,-85 70,-80 Z" 
+            fill="#141847" stroke="#f0535e" stroke-width="4" stroke-linejoin="round" />
+      <path d="M 80,-90 C 100,-150 130,-200 170,-250 C 145,-220 130,-190 125,-160 C 145,-185 170,-200 200,-220 C 180,-195 155,-170 140,-145 Z" fill="url(#antlerRed)" opacity="0.8" />
+    </g>
+
+    <!-- DX MONOGRAM STRUCTURE -->
+    <g id="DXMonogram" filter="url(#shadow)">
+      <!-- Outer Dark Base Contour (Heavy Outline) -->
+      <path d="M -260,-120 
+               L -80,-120 
+               C -10,-120 40,-80 40,0 
+               C 40,80 -10,120 -80,120 
+               L -260,120 Z
+               M 20,-120 L 110,-120 L 220,120 L 130,120 Z
+               M 220,-120 L 130,-120 L 20,120 L 110,120 Z" 
+            fill="#141847" stroke="#141847" stroke-width="32" stroke-linejoin="bevel" />
+
+      <path d="M -260,-120 
+               L -80,-120 
+               C -10,-120 40,-80 40,0 
+               C 40,80 -10,120 -80,120 
+               L -260,120 Z
+               M 20,-120 L 110,-120 L 220,120 L 130,120 Z
+               M 220,-120 L 130,-120 L 20,120 L 110,120 Z" 
+            fill="none" stroke="#f0535e" stroke-width="12" stroke-linejoin="bevel" />
+
+      <!-- Inner Red Letterform "D" -->
+      <path d="M -240,-100 L -90,-100 C -30,-100 20,-60 20,0 C 20,60 -30,100 -90,100 L -240,100 Z" fill="url(#dxRed)" />
+      <!-- D Inner Cutout -->
+      <path d="M -180,-40 L -180,40 L -100,40 C -70,40 -45,25 -45,0 C -45,-25 -70,-40 -100,-40 Z" fill="#141847" />
+
+      <!-- Inner Red Letterform "X" -->
+      <path d="M 30,-100 L 100,-100 L 210,100 L 140,100 Z" fill="url(#dxRed)" />
+      <path d="M 210,-100 L 140,-100 L 30,100 L 100,100 Z" fill="url(#dxRed)" />
+
+      <!-- Bevel Highlights -->
+      <path d="M -230,-90 L -90,-90 C -40,-90 0,-50 0,0" fill="none" stroke="#ff8089" stroke-width="6" />
+      <path d="M 40,-90 L 100,-90 L 200,90" fill="none" stroke="#ff8089" stroke-width="6" />
+    </g>
+
+    <!-- ROARING BEAR HEAD EMBLEM -->
+    <g id="BearHead" transform="translate(70, 40)" filter="url(#shadow)">
+      <!-- Outer Navy Shield / Head Silhouette -->
+      <path d="M -70,-60 
+               C -70,-90 -40,-90 -30,-65 
+               C -15,-75 15,-75 30,-65 
+               C 40,-90 70,-90 70,-60 
+               C 85,-30 75,30 0,80 
+               C -75,30 -85,-30 -70,-60 Z" 
+            fill="#141847" stroke="#f0535e" stroke-width="5" stroke-linejoin="round" />
+
+      <!-- Inner Red Fur Shape -->
+      <path d="M -55,-45 
+               C -55,-70 -35,-70 -25,-50 
+               C -12,-60 12,-60 25,-50 
+               C 35,-70 55,-70 55,-45 
+               C 65,-20 55,20 0,60 
+               C -55,20 -65,-20 -55,-45 Z" 
+            fill="url(#dxRed)" />
+
+      <!-- Ears -->
+      <path d="M -52,-52 C -52,-62 -40,-62 -35,-50 Z" fill="#141847" />
+      <path d="M 52,-52 C 52,-62 40,-62 35,-50 Z" fill="#141847" />
+
+      <!-- Snout & Mouth -->
+      <path d="M -30,-15 C -30,-35 30,-35 30,-15 C 30,25 -30,25 -30,-15 Z" fill="#141847" />
+      <path d="M -15,-18 L 15,-18 L 0,-2 Z" fill="#f0535e" />
+      <path d="M -20,2 Q 0,-5 20,2 Q 15,22 0,26 Q -15,22 -20,2 Z" fill="#141847" stroke="#f0535e" stroke-width="2" />
+      
+      <!-- Fangs -->
+      <polygon points="-14,1 -10,9 -6,1" fill="#ffffff" />
+      <polygon points="6,1 10,9 14,1" fill="#ffffff" />
+      <polygon points="-10,20 -7,13 -4,20" fill="#ffffff" />
+      <polygon points="4,20 7,13 10,20" fill="#ffffff" />
+
+      <!-- Eyes & Brow -->
+      <polygon points="-32,-22 -16,-16 -26,-10" fill="#ffffff" />
+      <polygon points="32,-22 16,-16 26,-10" fill="#ffffff" />
+      <path d="M -36,-26 L -14,-18" stroke="#f0535e" stroke-width="4" stroke-linecap="round" />
+      <path d="M 36,-26 L 14,-18" stroke="#f0535e" stroke-width="4" stroke-linecap="round" />
+    </g>
+
+  </g>
+
+  <!-- BRAND TYPOGRAPHY (DXESports) -->
+  <g id="TextGroup" transform="translate(500, 980)">
+    <!-- Outer Navy Outline -->
+    <text x="0" y="0" text-anchor="middle" font-family="'Rajdhani', 'Impact', sans-serif" font-weight="900" font-size="115" letter-spacing="4" fill="#141847" stroke="#141847" stroke-width="20" stroke-linejoin="round">
+      DXESports
+    </text>
+    <!-- Red Accent Outline -->
+    <text x="0" y="0" text-anchor="middle" font-family="'Rajdhani', 'Impact', sans-serif" font-weight="900" font-size="115" letter-spacing="4" fill="#141847" stroke="#f0535e" stroke-width="8" stroke-linejoin="round">
+      DXESports
+    </text>
+    <!-- Core Fill -->
+    <text x="0" y="0" text-anchor="middle" font-family="'Rajdhani', 'Impact', sans-serif" font-weight="900" font-size="115" letter-spacing="4">
+      <tspan fill="#f0535e">DX</tspan><tspan fill="#141847">ESports</tspan>
+    </text>
+  </g>
+</svg>
